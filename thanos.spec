@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name:	 thanos
-Version: 0.41.0
+Version: 0.42.4
 Release: 1%{?dist}
 Summary: Highly available Prometheus setup with long term storage capabilities.
 License: ASL 2.0
@@ -122,5 +122,7 @@ exit 0
 %dir %attr(750, prometheus, prometheus)%{_sharedstatedir}/%{name}/receive
 
 %changelog
+* Sun Aug 02 2026 Ivan Garcia <igarcia@cloudox.org> - 0.42.4
+- Initial packaging for the 0.42.4 branch
 * Wed Jun 10 2026 Ivan Garcia <igarcia@cloudox.org> - 0.41.0
 - Initial packaging for the 0.41.0 branch
